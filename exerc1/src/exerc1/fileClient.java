@@ -106,12 +106,9 @@ public class fileClient {
 			rctcount++;
 			double percent = rctcount/staticcount;
 			flag = (int)(percent*100);
-			if (flag%100 >= 1 && flag != pstflag ){
+			if (flag%10 == 1 && flag != pstflag ){
 				System.out.print(flag+"%"+" ");
 				pstflag = flag;
-				//if ((int)(percent*100) == 50){
-				//	System.out.print("\n");
-				//}
 			}
 			//System.out.print(".");
 			recInfo = dp.getData();
